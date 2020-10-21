@@ -6,23 +6,72 @@
 -->
 <html>
 	<head>
-		<title>Strata by HTML5 UP</title>
+		<title>Nandini Sahu</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+.collapsible {
+  background-color: #e7e7e7;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: auto;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #e7e7e7;
+}
+
+.content {
+  padding: 0 0;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  text-align: left;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+div.grid_text {
+  line-height: 0.60cm;
+  font-size: 14px;
+  text-align: justify;
+}
+
+ul.a{
+list-style-image: url('dott.png');
+}
+
+</style>
 	</head>
 	<body class="is-preload">
-
+	
 		<!-- Header -->
 			<header id="header">
+			    <style>
+         img {border-radius: 50%; }
+				</style>
+				
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/Nan2.jpg" alt="" /></a>
-					<h1><strong>Nandini Sahu</strong><br />
+				
+					<a href="www.nsahu.github.io/index.html"><img src="images/Nan2.jpg" alt="Nandini" height="200" width="250"/></a>
+					<h1><br /><strong>Nandini Sahu</strong><br />
 					 Ph.D. Candidate<br />
-					 <a href="https://www.ozgrav.org/">OzGrav Centre for Excellence</a><br />
-					 <a href="http://astronomy.swin.edu.au/">Centre for Astrophysics and Supercomputing</a><br />
-					 Swinburne University of Technology<br />
-					 Melbourne, Australia.</h1>
+					 <a href="https://www.ozgrav.org/">The ARC Centre of Excellence For Gravitational Wave Discovery (OzGrav) </a><br />
+					 <a href="http://astronomy.swin.edu.au/">Centre for Astrophysics and Supercomputing (CAS)</a><br />
+					 <a href="https://www.swinburne.edu.au/"> Swinburne University of Technology
+					 Melbourne, Australia.</a><br /></h1>
 				</div>
 			</header>
 
@@ -32,69 +81,299 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Two roads diverged in a wood, and I took the one less traveled by, and that has made all the differences</h2>
+							<h2> <p style="color:green;font-family:times" >Two roads diverged in a wood, 
+							and I took the one less traveled by, and that has made all the difference. </p>
+							 <p style="text-align:right;font-size:20px"> ~Robert Frost </h2> </p>
 						</header>
-						<p>I am Ph.D. student at Swinburne University of Technology, Melbourne, Australia. Through my current work I am looking for the foundational relations
-						between central supermassive black hole and host galaxy properties.  </p>
+						<p style="color:black;font-family:times"> I am an OzGrav Ph.D. student at Centre for Astrophysics and Supercomputing (CAS), Swinburne University of Technology, Melbourne, Australia. 
+						I am trying to understand how the supermassive black holes co-evolve with the host galaxy by investigating the 
+						correlation between black hole mass and host galaxy properties. 
+						  </p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><button type="button" class="collapsible">Here is a brief summary of my work:</button>
+								<div class="content">
+								<br>
+									<p style="color:black;font-family:times;text-align:justify" > 
+									Black holes are one of the most mysterious objects in our Universe. Observations suggest that they exist in a continuum of mass 
+									starting from stellar-mass black holes to super-massive black holes (SMBH); though, an undisputed detection of intermediate-mass 
+									black holes is yet to happen. A galaxy may have millions of stellar-mass black holes but only one SMBH at their centre with masses
+									in between about a million to billion times the solar mass. For decades astronomers are trying to study how the central black hole 
+									may govern various properties of the host galaxy and vice-versa. Our work adds another step to this study. We have performed 
+									careful, multi-component, photometric-decompositions of the largest-to-date sample of galaxies with dynamically measured (central) SMBH 
+									masses.  These decompositions enabled us to measure the bulge masses and reliably identify the galaxy morphologies. We explored the black 
+									hole mass scaling relations for various sub-morphological classes of the galaxies, including galaxies with and without a rotating stellar 
+									disk, early-type (E, ES, S0) versus late-type galaxies (all spirals), barred versus non-barred galaxies, and Sérsic versus core-Sérsic 
+									galaxies. Consequently, we have discovered significantly modified correlations of black hole mass with galaxy properties, i.e., the 
+									spheroid/bulge stellar mass, the total galaxy stellar mass, the central stellar velocity dispersion, central luminosity/mass 
+									concentration (Sérsic index), effective half-light radius, and the internal/spatial stellar mass density. The final scaling relations 
+									are dependent on galaxy morphology, which is fundamentally-linked with the formation and evolutionary paths of galaxies. These new scaling 
+									relations more accurately predict the black hole masses in other galaxies, pose ramifications for the virial-mass f-factor, and offer 
+									insights into simulations and theories of black hole-galaxy co-evolution. Additionally, these scaling relations will improve the predictions
+									for the ground-based and space-based detection of long-wavelength gravitational waves by the pulsar timing arrays and the upcoming 
+									Laser Interferometer Space Antenna (LISA), respectively.
+									</p>
+								</div>
+							</li>
 						</ul>
-					</section>
+						
+						<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+					</section>
 				<!-- Two -->
 					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-						    <article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/Creator's_Brush.jpg" class="image fit thumb"><img src="images/thumbs/Creator's_Brush.jpg" alt="" /></a>
-								<h3>Disassembling galaxy light into its components</h3>
-								<p>Add summary.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Revealing Hidden Substructures in the M BH─σ Diagram, and Refining the Bend in the L─σ Relation</h3>
-								<p>Add summary.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Black Hole Mass Scaling Relations for Early-type Galaxies. I. MBH-M *,sph and MBH-M*,gal</h3>
-								<p>Add summary.</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
+						<h2><p style="color:orange;text-align:center;font-size:36px">Research Highlights!</p></h2>		
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">
+										<div class="col-lg-5">
+												<a href="images/fulls/Creator's_Brush.jpg" class="image fit thumb"><img src="images/fulls/Creator's_Brush.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+												<h3 style="color:black">Galaxy Modeling and Multi-Component Decomposition</h3>
+													<p style="color:gray">We performed a 2-dimensional (2D) isophotal analysis, first extracting a 2D luminosity model using Isofit and 
+													Cmodel (Ciambur 2015) to capture the radial gradients in the ellipticity, position angle, and Fourier harmonic coefficients describing the 
+													isophote's deviations from a pure ellipse, and then performing a multi-component decomposition using the isophotal-averaged 
+													1D surface brightness profile along the major and geometric-mean axis of the galaxies. For this purpose, we used the software 
+													Profiler (Ciambur 2016), which is inbuilt with many functions for specific galaxy components, including the Sersic function for 
+													galactic bulges/spheroids. (see Section 3 in Sahu et al. 2019a, for more details). </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">
+										<div class="col-lg-4">
+											<div class="grid_text">
+											<h3 style="color:black">NGC 7457</h3>
+												<p style="color:gray"> NGC 7457 is an early type galaxy with a bulge and a disk. Image set shows, galaxy (3.6mu) image, 2D isphotal model, and 
+													residual obtained by subtracting the model from the galaxy image. </p>
+											</div>
+										</div>									
+										<div class="col-lg-8">
+												<a href="images/fulls/NGC7457.jpg" class="image fit thumb"><img src="images/fulls/NGC7457.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/Mbh_Msph_ETG_LTG.jpg" class="image fit thumb"><img src="images/fulls/Mbh_Msph_ETG_LTG.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black"> Morphology dependent M<sub>BH</sub>-M<sub>*,sph</sub> relation</h3>
+											<p style="color:gray"> Black hole mass versus bulge mass relation is dependent on galaxy morphology. 
+											Where, Early-type galaxies (ETGs) and late-type galaxies (LTGs) define two different relations
+											between black hole mass and bulge (spheroid) mass. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<!--  <ul class="actions">
+							<li><button type="button" class="collapsible">More</button>
+							<br>
+							<div class="content"> -->
+							
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black">Offset! Between ETG sub-population in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram</h3>
+											<p style="color:gray">Early-type galaxies with a stellar disk and early-type galaxies without a stellar disk follow 
+											two different almost parallel relations between black hole mass and spheroid stellar mass, which are 
+											offset from each other by more than an order of magnitude in the vertical direction.</p>
+											</div>									
+										</div>
+										<div class="col-lg-5">
+											<a href="images/fulls/Mbh_Msph_double.jpg" class="image fit thumb"><img src="images/fulls/Mbh_Msph_double.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/Mbh_Mgal_ETG_LTG.jpg" class="image fit thumb"><img src="images/fulls/Mbh_Mgal_ETG_LTG.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black">There exists a correlation between black hole mass and total galaxy stellar mass, albiet 
+											morphology dependent.</h3>
+											<p style="color:gray"> Black hole mass also correlates with galaxy stellar mass, however, this correlation
+											is different for early-type galaxies (ETGs) and late-type galaxies (ETGs). LTGs define a steeper 
+											M<sub>BH</sub>-M<sub>*,gal</sub> relation with slope twice as that of ETGs. Now the black hole mass in other galaxies 
+											can be estimated using the galaxy stellar mass without going through the complex multi-component 
+											decomposition process. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black"> Broken Black Hole Mass---Central Stellar Velocity Dispersion Relation</h3>
+											<p style="color:gray"> Massive core-Sersic (merger driven) and Sersic (gas abundant accretion or wet merger driven) galaxies 
+											define two different relations between black hole mass (absolute magnitude) and the central stellar velocity dispersion. 
+											The distinct relations for the two sub-samples may be linked with their evolutionary tracks.  </p>
+											</div>									
+										</div>
+										<div class="col-lg-5">
+											<a href="images/fulls/CS_S_ETGs.jpg" class="image fit thumb"><img src="images/fulls/CS_S_ETGs.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/L_sigma_ETGs.jpg" class="image fit thumb"><img src="images/fulls/L_sigma_ETGs.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black">A break in the Faber-Jackson Relation</h3>
+											<p style="color:gray">Using our ETG sample with 3.6 mu imaging we found that Sersic 
+											(gas abundant accretion or wet merger driven) galaxies and massive core-Sersic (merger driven) define two different relations
+											between galaxy luminosity (absolute magnitude) and the central stellar velocity dispersion.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black">A break in the Faber-Jackson Relation</h3>
+											<p style="color:gray"> Massive core-Sersic (merger driven) and Sersic (gas abundant accretion or wet merger driven) galaxies 
+											define two different relations between galaxy luminosity (absolute magnitude) and the central stellar velocity dispersion. 
+											This plot is based on the V-band data from Lauer et al.(2007) </p>
+											</div>									
+										</div>
+										<div class="col-lg-5">
+											<a href="images/fulls/Vmag_sigma.jpg" class="image fit thumb"><img src="images/fulls/Vmag_sigma.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container-fluid">
+							    <div class="thumbnail">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/double_Mbh_Re_eq_ETG_LTG.jpg" class="image fit thumb"><img src="images/fulls/double_Mbh_Re_eq_ETG_LTG.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<h3 style="color:black">The origin of the offset between ETG subpopulation in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram</h3>
+												<p style="color:gray">This plot shows that the offset between ETGs with a stellar disk and ETGs without a stellar 
+												disk re-appears in the correlation between black hole mass and effective spheroid radius. In our 
+												recent paper we reveal that the offset between the two ETG subpopulation in the seen initially 
+												in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram originates from  the offset in the M<sub>BH</sub>-R<sub>e,sph</sub> relation. 
+												The reason behind this offset is the smaller bulges of ETGs which also have a dominant stellar disk. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+					<!-- </div>
+					</li>
+				</ul> -->	
+				</section>	
+						 
+						
+				
+												
+
+					
+					<!-- Two -->
+					<section id="three">
+						    <!-- <li><a href="#" class="button">Research work</a></li> -->
+							<h2><p style="color:orange;text-align:center;font-size:30px">Publications</p></h2>	
+								<ul class="a">
+								<li style="color:black;font-family:times">Revealing Hidden Substructures in the M<sub>BH</sub>-σ Diagram, and Refining the Bend in the L-σ Relation. <a href="https://ui-adsabs-harvard-edu.ezproxy.lib.swin.edu.au/abs/2019ApJ...887...10S/abstract/">Link</a> </li>								
+								<li style="color:black;font-family:times"> Defining the (Black Hole)–Spheroid Connection with the Discovery of Morphology-dependent Substructure in the M<sub>BH</sub>–n<sub>sph</sub> and M<sub>BH</sub>–R<sub>e,sph</sub> 
+								Diagrams: New Tests for Advanced Theories and Realistic Simulations (Accepted, coming online soon) </li>
+								<li style="color:black;font-family:times"> Black Hole Mass Scaling Relations for Early-type Galaxies. I. M<sub>BH</sub>-M<sub>*,sph</sub> and M<sub>BH</sub>-M<sub>*,gal</sub> <a href="https://ui-adsabs-harvard-edu.ezproxy.lib.swin.edu.au/abs/2019ApJ...876..155S/abstract/">Link</a></li>							
+							</ul>
+					</section>
+					
+					<!-- Two -->
+					<section id="four">
+						
+						    <!-- <li><a href="#" class="button">Talks/Presentations/Posters</a></li> -->
+							<h2><p style="color:orange;text-align:center;font-size:30px">Talks/Presentations/Posters</p></h2>	
+
+								<ul class="a">
+								<li style="color:black;font-family:times">Morphology-Dependent Black Hole Scaling Relations and Pursuit of Long-wavelength Gravitational Waves. <a href="https://lisasymposium13.lisamission.org/presentations/mq3tVYUq0xXpNmKMiNfXLLZUESP2/xgOeG73Cw52fukLtPw0n">The 13th International LISA Symposium</a> </li>								
+							    <li style="color:black;font-family:times">Royal Astronomical Society Early Career Researcher Poster Exhibition. <a href="https://ras.ac.uk/sites/default/files/posters/Nandini_Sahu_RAS%20-%20nandini%20sahu.pdf"> View poster</a> <a href="https://ras.ac.uk/poster-contest/nandini-sahu"> /Description</a> </li>								
+
+							</ul>
 					</section>
 
+				
 				<!-- Three -->
-					<section id="three">
+					<section id="five">
+					    <p style="color:orange;font-family:times"> This website is under construction, for more details:</p>
 						<h2>Get In Touch</h2>
-						<p>Write Something here.</p>
+						<!--
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form method="post" action="mailto:nsahu@swin.edu.au">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</form>
+								
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send" /></li>
 								</ul>
+								</form>
 							</div>
+							-->
+							
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										John Street.<br />
-										Hawthorn, VIC 3122<br />
+										Carr St.<br />
+										St. Lucia, QLD 4067<br />
 										Australia
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
+										+61-392145846
+									</li> 
+									
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
 										<a href="#">nsahu@swin.edu.au</a>
@@ -428,13 +707,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://twitter.com/SahuNandini27" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/nasa2705" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.researchgate.net/profile/Nandini_Sahu" class="icon brands fa-researchgate"><span class="label">Researchgate</span></a></li>
+						<li><a href="mailto:nsahu@swin.edu.au" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Nandini Sahu</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
