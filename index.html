@@ -14,20 +14,118 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<style>
-.collapsible {
-  background-color: #e7e7e7;
-  color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: auto;
+		
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
   border: none;
-  text-align: center;
   outline: none;
-  font-size: 15px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
-.active, .collapsible:hover {
-  background-color: #e7e7e7;
+
+#myBtn:hover {
+  background-color: #555;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  line-height: initial;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50 !important;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white !important	;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA !important;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white !important;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336 !important;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white !important;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #f7786b !important;
+}
+
+.button4:hover {
+background-color: #f7786b;
+color: white !important;
+}
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555 !important;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white !important;
+}
+
+.button6 {
+  background-color: white;
+  color: black;
+  border: 2px solid #800080 !important;
+}
+
+.button6:hover {
+  color: white !important;
+  background-color: #800080	;
+}
+
+.button7 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008080 !important;
+}
+
+.button7:hover {
+  color: white !important;
+  background-color: #008080	;
 }
 
 .content {
@@ -53,9 +151,39 @@ ul.a{
 list-style-image: url('dott.png');
 }
 
+.img_inline{
+ height: 250px;
+  width: 400px;
+border-radius: 8px;
+float: right;
+padding: 20px;
+}
+
 </style>
 	</head>
 	<body class="is-preload">
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 	
 		<!-- Header -->
 			<header id="header">
@@ -89,16 +217,31 @@ list-style-image: url('dott.png');
 						I am trying to understand how the supermassive black holes co-evolve with the host galaxy by investigating the 
 						correlation between black hole mass and host galaxy properties. 
 						  </p>
-						<ul class="actions">
-							<li><button type="button" class="collapsible">Here is a brief summary of my work:</button>
-								<div class="content">
-								<br>
-									<p style="color:black;font-family:times;text-align:justify" > 
+						  
+				    </section>
+					<section id="links">	  
+						  <div class="container-fluid">
+						  <a href="#summ"><button class="button button4">Brief Summary</button></a>
+						  <a href="#two"><button class="button button1">Research Highlights</button></a>
+						  <a href="#three"><button class="button button2">What's Next</button></a>
+						  <a href="#four"><button class="button button3">Publications</button></a>
+						  <a href="#five"><button class="button button6">Talks/Posters</button></a>
+						  <a href="#CV"><button class="button button5">CV</button></a>
+						  <a href="#six"><button class="button button7">Contact info</button></a>
+						  </div>
+					 </section>
+					 <section id="summ">
+						  <h2><p style="color:orange;text-align:center;font-size:36px">Brief Summary</p></h2>		
+							<div class="container-fluid">
+									<p style="color:black;font-family:times;text-align:justify;font-size:18px;line-height:0.75cm" > 
+									
 									Black holes are one of the most mysterious objects in our Universe. Observations suggest that they exist in a continuum of mass 
 									starting from stellar-mass black holes to super-massive black holes (SMBH); though, undisputed detections of majority of intermediate-mass 
 									black holes is yet to happen. A galaxy may have millions of stellar-mass black holes but only one SMBH at its centre with mass
 									in between about a million to billion times the solar mass. For decades astronomers are trying to study how the central black hole 
-									may govern various properties of the host galaxy and vice-versa. Our work adds another step to this study. <br />
+									may govern various properties of the host galaxy and vice-versa. Our work adds another step to this study. <br /></p>
+									<img class = "img_inline" src="./images/fulls/BH_art.jpg">
+									<p style="color:black;font-family:times;text-align:justify;font-size:18px;line-height:0.75cm" >
 									We have performed 
 									careful, multi-component, photometric-decompositions of the largest-to-date sample of galaxies with dynamically measured (central) SMBH 
 									masses.  These decompositions enabled us to measure the bulge masses and reliably identify the galaxy morphologies. We explored the black 
@@ -106,7 +249,8 @@ list-style-image: url('dott.png');
 									disk, early-type (E, ES, S0) versus late-type galaxies (all spirals), barred versus non-barred galaxies, and Sérsic versus core-Sérsic 
 									galaxies. Consequently, we have discovered significantly modified correlations of black hole mass with galaxy properties, i.e., the 
 									spheroid/bulge stellar mass, the total galaxy stellar mass, the central stellar velocity dispersion, central luminosity/mass 
-									concentration (Sérsic index), effective half-light radius, and the internal/spatial stellar mass density. <br />
+									concentration (Sérsic index), effective half-light radius, and the internal/spatial stellar mass density. <br /></p>
+									<p style="color:black;font-family:times;text-align:justify;font-size:18px;line-height:0.75cm" >
 									The final scaling relations 
 									are dependent on galaxy morphology, which is fundamentally-linked with the formation and evolutionary paths of galaxies. These modified scaling 
 									relations more accurately predict the black hole masses in other galaxies, pose ramifications for the virial-mass f-factor, and offer 
@@ -114,28 +258,7 @@ list-style-image: url('dott.png');
 									for the ground-based and space-based detection of long-wavelength gravitational waves by the pulsar timing arrays and the upcoming 
 									Laser Interferometer Space Antenna (LISA), respectively.
 									</p>
-								</div>
-							</li>
-						</ul>
-						
-						<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-					
-					
+							</div>
 					</section>
 				<!-- Two -->
 					<section id="two">
@@ -216,13 +339,212 @@ for (i = 0; i < coll.length; i++) {
 							</div>
 							
 							
-							<!-- button 
-							<ul class="actions">
-							<li><button type="button" class="collapsible">More</button>
-							<br>
-							<div class="col-lg-12"> --> 
+							<!--div class="container-fluid">
+								<div class="thumbnail">
+									<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">More...</button>
+									<br><br>
+									<div id="demo" class="collapse show">
+										<div class="row">
+											<div class="col-lg-7">
+												<div class="grid_text">
+												<h3 style="color:black">Offset! Between ETG sub-population in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram</h3>
+												<p style="color:gray">Early-type galaxies with a stellar disk (ES, S0) and early-type galaxies without a stellar disk (E) follow 
+												two different almost parallel relations between black hole mass and spheroid stellar mass, which are 
+												offset from each other by more than an order of magnitude in the vertical direction.</p>
+												</div>									
+											</div>
+											<div class="col-lg-5">
+												<a href="images/fulls/Mbh_Msph_double.jpg" class="image fit thumb"><img src="images/fulls/Mbh_Msph_double.jpg" class="img-rounded"> </a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div-->
 							
 							<div class="container-fluid">
+							<h2>More Highlights ... Click on the panels to expand</h2>
+							  <div id="accordion">
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+									 Offset! Between ETG sub-population in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram
+									</a>
+									</div>
+								  <div id="collapseOne" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<p style="color:gray">Early-type galaxies with a stellar disk (ES, S0) and early-type galaxies without a stellar disk (E) follow 
+											two different almost parallel relations between black hole mass and spheroid stellar mass, which are 
+											offset from each other by more than an order of magnitude in the vertical direction.</p>
+											</div>									
+										</div>
+										<div class="col-lg-5">
+											<a href="images/fulls/Mbh_Msph_double.jpg" class="image fit thumb"><img src="images/fulls/Mbh_Msph_double.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+									 There exists a correlation between black hole mass and total galaxy stellar mass, albeit 
+											morphology dependent
+									</a>
+									</div>
+								  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/Mbh_Mgal_ETG_LTG.jpg" class="image fit thumb"><img src="images/fulls/Mbh_Mgal_ETG_LTG.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<p style="color:gray"> Black hole mass also correlates with galaxy stellar mass, however, this correlation
+											is different for early-type galaxies (ETGs) and late-type galaxies (ETGs). LTGs define a steeper 
+											M<sub>BH</sub>-M<sub>*,gal</sub> relation with slope twice as that of ETGs. Now the black hole mass in other galaxies 
+											can be estimated using the galaxy stellar mass without going through the complex multi-component 
+											decomposition process. </p>
+											</div>
+										</div>
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+									 Broken Black Hole Mass---Central Stellar Velocity Dispersion Relation
+									</a>
+									</div>
+								  <div id="collapseThree" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<p style="color:gray"> Massive core-Sérsic (merger driven) and Sérsic (gas abundant accretion or wet merger driven) galaxies 
+											define two different relations between black hole mass and the central stellar velocity dispersion. 
+											The distinct relations for the two sub-samples may be linked with their evolutionary tracks.  </p>
+											</div>									
+										</div>
+										<div class="col-lg-5">
+											<a href="images/fulls/CS_S_ETGs.jpg" class="image fit thumb"><img src="images/fulls/CS_S_ETGs.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+									 A break in the Faber-Jackson Relation (L<sub>3.6 mu</sub> --σ)
+									</a>
+									</div>
+								  <div id="collapseFour" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/L_sigma_ETGs.jpg" class="image fit thumb"><img src="images/fulls/L_sigma_ETGs.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<p style="color:gray">Using our ETG sample with 3.6 mu imaging, we found that Sérsic 
+											(gas abundant accretion or wet merger driven) galaxies and massive core-Sérsic (merger driven) define two different relations
+											between galaxy luminosity (absolute magnitude) and the central stellar velocity dispersion.</p>
+											</div>
+										</div>
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseFive">
+									A break in the Faber-Jackson Relation (L<sub>V</sub> --σ)
+									</a>
+									</div>
+								  <div id="collapseFive" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">
+										<div class="col-lg-7">
+											<div class="grid_text">
+											<p style="color:gray"> Massive core-Sérsic (merger driven) and Sérsic (gas abundant accretion or wet merger driven) galaxies 
+											define two different relations between galaxy luminosity (absolute magnitude) and the central stellar velocity dispersion. 
+											This plot is based on the V-band data from Lauer et al.(2007) </p>
+											</div>									
+										</div>
+										<div class="col-lg-5">
+											<a href="images/fulls/Vmag_sigma.jpg" class="image fit thumb"><img src="images/fulls/Vmag_sigma.jpg" class="img-rounded"> </a>
+										</div>
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseSix">
+									The origin of the offset between ETG subpopulation in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram
+									</a>
+									</div>
+								  <div id="collapseSix" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">									
+										<div class="col-lg-5">
+												<a href="images/fulls/double_Mbh_Re_eq_disk.jpg" class="image fit thumb"><img src="images/fulls/double_Mbh_Re_eq_disk.jpg" class="img-rounded"> </a>
+										</div>
+										<div class="col-lg-7">
+											<div class="grid_text">
+												<p style="color:gray">This plot shows that the offset between ETGs with a stellar disk and ETGs without a stellar 
+												disk re-appears in the correlation between black hole mass and effective spheroid radius. In our 
+												recent paper we reveal that the offset between the two ETG subpopulation, seen initially 
+												in the M<sub>BH</sub>-M<sub>*,sph</sub> diagram, originates from  the offset in the M<sub>BH</sub>-R<sub>e,sph</sub> relation. 
+												The reason behind this offset is the smaller bulges of ETGs which also have a dominant stellar disk. </p>
+											</div>
+										</div>
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+								<div class="card">
+									<div class="card-header">
+									<a class="collapsed card-link" data-toggle="collapse" href="#collapseSeven">
+									Multi-Component Galaxy Model and Surface Brightness Profile (NGC 4371)
+									</a>
+									</div>
+								  <div id="collapseSeven" class="collapse" data-parent="#accordion">
+									<div class="card-body">
+									<div class="row">								
+										<div class="col-lg-8">
+											<div class="grid_text">
+												<p style="color:gray"> NGC 4371 is a multi-component early type galaxy with a bulge, barlens, bar, ansae, and disk. 
+												The top image set shows the galaxy image (3.6mu), 2D isophotal model, and the residual. Bottom panels show the isophotal averaged surface brightness profiles
+												along the galaxy major-axis and equivalent-axis (geometric mean of major and minor axis), respectively. In addition, the surface brightness profile is 
+												followed by residual (data-fit), ellipticity profile, position angle profile, fourth Fourier harmonic (cosine) coefficient profile. Galaxy components are 
+												identified by visual inspections at various contrast levels, features in the ellipticity, position angle, higher Fourier harmonic coefficient profiles,
+												and kinematic evidences (when available in literature). </p>
+											</div>
+										</div>	
+										<div class="col-lg-4">
+												<a href="images/fulls/NGC4371.jpg" class="image fit thumb"><img src="images/fulls/NGC4371.jpg" class="img-rounded"> </a>
+										</div>
+										
+									</div>
+									</div>
+								  </div>
+								</div>
+								
+							  </div>
+							</div>
+							
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">
 										<div class="col-lg-7">
@@ -238,8 +560,9 @@ for (i = 0; i < coll.length; i++) {
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="container-fluid">
+							</div-->
+							
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">									
 										<div class="col-lg-5">
@@ -258,8 +581,10 @@ for (i = 0; i < coll.length; i++) {
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="container-fluid">
+							</div-->
+							
+							
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">
 										<div class="col-lg-7">
@@ -275,8 +600,9 @@ for (i = 0; i < coll.length; i++) {
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="container-fluid">
+							</div-->
+							
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">									
 										<div class="col-lg-5">
@@ -292,8 +618,8 @@ for (i = 0; i < coll.length; i++) {
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="container-fluid">
+							</div-->
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">
 										<div class="col-lg-7">
@@ -309,9 +635,9 @@ for (i = 0; i < coll.length; i++) {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div-->
 							
-							<div class="container-fluid">
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">									
 										<div class="col-lg-5">
@@ -329,9 +655,9 @@ for (i = 0; i < coll.length; i++) {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div-->
 							
-							<div class="container-fluid">
+							<!--div class="container-fluid">
 							    <div class="thumbnail">
 									<div class="row">	
 																	
@@ -352,7 +678,7 @@ for (i = 0; i < coll.length; i++) {
 										
 									</div>
 								</div>
-							</div>
+							</div-->
 							
 					<!-- </div>
 					</li>
@@ -426,6 +752,12 @@ for (i = 0; i < coll.length; i++) {
 							</ul>
 					</section>
 
+				
+				<section id="CV">
+					    <h2><p style="color:orange;text-align:center;font-size:30px">Curriculum Vitae</p></h2>
+						
+						<iframe src="CV_nan.pdf" width="100%" height="600px"> </iframe>
+				</section>
 				
 				<!-- Three -->
 					<section id="six">
@@ -801,7 +1133,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						<li><a href="mailto:nsahu@swin.edu.au" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Nandini Sahu</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Nandini Sahu</li>
 					</ul>
 				</div>
 			</footer>
